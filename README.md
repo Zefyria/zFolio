@@ -1,3 +1,3 @@
 # Programming folio
 
-[PyBax](/python/PyBax): A program for every in-built Python function 
+[PyBax](/python/PyBax): A program for every in-built Python function and method
