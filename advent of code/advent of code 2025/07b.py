@@ -67,8 +67,8 @@ def find_digit(tachyon, row, column):
 
 def main():
     print('\n============================\nAdvent of Code 2025 - Day 7a\n============================\n')
-    f = '07.csv'
-    #f = '07test.csv'
+    #f = '07.csv'
+    f = '07test.csv'
     tachyon = read_input(f)
     height = len(tachyon)
     width = len(tachyon[0])
@@ -80,6 +80,11 @@ def main():
                 left = find_digit(tachyon, row, column-1)
                 right = find_digit(tachyon, row, column+1)
                 tachyon[row][column] = left + right
+
+    for row in range(0,height):
+        for column in range(0,width):
+            print(tachyon[row][column], end='')
+        print()
 
     for column in range(0,width):
         if str(tachyon[2][column]).isnumeric() == True:
